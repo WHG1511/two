@@ -1,0 +1,7 @@
+var express=require("express")
+var app=express()
+var router=require("./router")
+var indexrouter=require("./indexrouter")
+app.use("/news",router)
+app.use("/index",indexrouter)
+app.listen(3000)

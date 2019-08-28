@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    form{
+        width: 1000px;
+        height: 600px;
+        border: 1px solid gray;
+        margin: 100px auto;
+    }
+    .zhuce,.denglu{
+        width: 400px;
+        height: 600px;
+        border: 1px solid gray;
+        margin: 0 auto;
+    }
+    .zhuce>p,.denglu>p{
+        width: 400px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 25px;
+    }
+    </style>
+</head>
+<body>
+    <form action="http://127.0.0.1:3000/send"  enctype="multipart/form-data" method="POST">
+        <div class="zhuce">
+            <p>注册</p>
+        用户名：<input type="text" name="username" id=""><br>
+        密码:<input type="text" name="mima" id=""><br>
+        <input type="file" name="pic">
+        <input type="submit" value="提交">
+        </div>
+    </form>
+    
+</body>
+</html>
